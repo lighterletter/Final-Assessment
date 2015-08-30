@@ -146,5 +146,4 @@ public class Part2ListTests {
                     equalTo(activity.getResources().getColor(HOUSE_COLORS.get(house))));
         }
     }
-
 }

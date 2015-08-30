@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@id/button_name"
-        android:text="@string/show_color"
+        android:text="@string/hide_color"
         />
 
     <ListView

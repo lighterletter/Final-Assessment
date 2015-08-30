@@ -1,8 +1,72 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pace_calculator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nyc.c4q.PaceCalculatorActivity"
-    />
+    tools:context="nyc.c4q.PaceCalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/input_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/input_time_sec"
+                android:layout_below="@+id/input_time_sec"
+                android:layout_marginTop="56dp"
+                android:hint="Distance" />
+
+            <EditText
+                android:id="@+id/input_time_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/input_time_sec"
+                android:layout_toStartOf="@+id/button_calculate"
+                android:hint="Time (Min)" />
+
+            <EditText
+                android:id="@+id/input_time_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/button_calculate"
+                android:layout_centerVertical="true"
+                android:hint="Time (Sec)" />
+
+            <EditText
+                android:id="@+id/input_pace_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/input_time_min"
+                android:layout_alignStart="@+id/input_time_min"
+                android:layout_marginBottom="64dp"
+                android:hint="Pace (Min)" />
+
+            <EditText
+                android:id="@+id/input_pace_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/input_time_sec"
+                android:layout_alignTop="@+id/input_pace_min"
+                android:hint="Pace (Sec)" />
+
+            <Button
+                android:id="@+id/button_calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Calculate" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
